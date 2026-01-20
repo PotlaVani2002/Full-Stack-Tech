@@ -1,0 +1,30 @@
+<div style="background: linear-gradient(145deg,rgb(112, 126, 123),white);height:100vh">
+    <div
+        style="margin: 0; display: flex;justify-content: center;align-items: center;flex-direction: column;padding:20px;">
+        <h1 style="font-size: 32px;font-weight: 700;margin: 20px 50px;color:blueviolet">{{title}}</h1>
+        <div
+            style="margin: 0; display: flex;justify-content: center;align-items: center;gap:40px;color:rgb(129, 35, 106)">
+            <div style="border:2px solid rgb(102, 78, 78);padding:30px;">
+                <div>Product Name : {{product.name}}</div>
+                <div>Product Price : {{'$'+ product.price}}</div>
+                <div>Product Color : {{product.color}}</div>
+                <div>Offer Price : {{'$'+ getDiscount()}}</div>
+                <div>Saved Amount : {{'$'+ product.discount*this.product.price/100}}</div>
+            </div>
+            <div style="border:2px solid rgb(102, 78, 78);padding:30px;">
+                <div>Product Name : {{product.name}}</div>
+                <div>Product Price : {{'$'+ product.price}}</div>
+                <div>Product Color : {{product.color}}</div>
+                <div>Offer Price : {{'$'+ getDiscount()}}</div>
+                <div>Saved Amount : {{'$'+ product.discount*this.product.price/100}}</div>
+            </div>
+            <div style="border:2px solid rgb(102, 78, 78);padding:30px;">
+                <div>Product Name : {{product.name}}</div>
+                <div>Product Price : {{'$'+ product.price}}</div>
+                <div>Product Color : {{product.color}}</div>
+                <div>Offer Price : {{'$'+ getDiscount()}}</div>
+                <div>Saved Amount : {{'$'+ product.discount*this.product.price/100}}</div>
+            </div>
+        </div>
+    </div>
+</div>
