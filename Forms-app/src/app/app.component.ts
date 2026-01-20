@@ -7,13 +7,14 @@ import { StringintepolationComponent } from './stringintepolation/stringintepola
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
+import { StaticpageComponent } from './staticpage/staticpage.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ReactiveFormsModule, FormsModule, LoginFormComponent,
              NestedformComponent, StringintepolationComponent, PropertybindingComponent,
-              EventbindingComponent,TwowaydatabindingComponent],
+              EventbindingComponent,TwowaydatabindingComponent,StaticpageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
