@@ -8,13 +8,14 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
 import { StaticpageComponent } from './staticpage/staticpage.component';
+import { MobileValidatorComponent } from './mobile-validator/mobile-validator.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ReactiveFormsModule, FormsModule, LoginFormComponent,
              NestedformComponent, StringintepolationComponent, PropertybindingComponent,
-              EventbindingComponent,TwowaydatabindingComponent,StaticpageComponent],
+              EventbindingComponent,TwowaydatabindingComponent,StaticpageComponent,MobileValidatorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

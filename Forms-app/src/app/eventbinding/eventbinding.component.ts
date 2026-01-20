@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './eventbinding.component.html',
-  styleUrl: './eventbinding.component.css'
+  // styleUrl: './eventbinding.component.css'
 })
 export class EventbindingComponent {
   email:string='';
