@@ -1,16 +1,14 @@
 <form [formGroup]="mobileForm">
     <input type="text" formControlName="mobile" placeholder="Enter mobile number" class=" border-2 border-sky-500 p-2">
-
-<!-- Required -->
-<div *ngIf="mobileForm.get('mobile')?.errors?.['required']
+    <!-- Required -->
+    <div *ngIf="mobileForm.get('mobile')?.errors?.['required']
             && mobileForm.get('mobile')?.touched" class="text-red-600 mt-2">
-  Mobile number is required
-</div>
-
-<!-- Custom Validator -->
-<div *ngIf="mobileForm.get('mobile')?.errors?.['mobileInvalid']
+        Mobile number is required
+    </div>
+    <!-- Custom Validator -->
+    <div *ngIf="mobileForm.get('mobile')?.errors?.['mobileInvalid']
             && mobileForm.get('mobile')?.touched" class="text-red-600 mt-2 ">
-  Enter a valid 10-digit mobile number
-</div>
-<button (click)="show()" class="p-2 text-white bg-green-500 rounded-lg mt-4 ml-4 p-3 text-xl">Submit</button>
+        Enter a valid 10-digit mobile number
+    </div>
+    <button (click)="show()" class="p-2 text-white bg-green-500 rounded-lg mt-4 ml-4 p-3 text-xl">Submit</button>
 </form>

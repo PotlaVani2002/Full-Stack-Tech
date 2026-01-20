@@ -1,13 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {
-  AbstractControl,
-  FormControl,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-  ValidationErrors
-} from '@angular/forms';
+import { AbstractControl,FormControl,FormGroup,ReactiveFormsModule,Validators,ValidationErrors } from '@angular/forms';
 
 @Component({
   selector: 'app-mobile-validator',
@@ -26,7 +19,6 @@ export class MobileValidatorComponent {
 
   mobileValidator(control: AbstractControl): ValidationErrors | null {
     const value = control.value;
-
     if (!value) {
       return null; // required will handle empty case
     }
